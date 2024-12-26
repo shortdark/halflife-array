@@ -14,14 +14,14 @@ Creates an array of the halflife of something as it decreases over time.
 * **amountLimit**: The value to stop calculating the value at
 
 ```
-readingAmount = 100;
-halflifeMinutes = 300;
-intervalMinutes = 10; 
-amountLimit = 0.5;
+const readingAmount = 100;
+const halflifeMinutes = 300;
+const intervalMinutes = 10; 
+const amountLimit = 0.5;
 const halflifeArray = halflifeArray(readingAmount, halflifeMinutes, intervalMinutes, amountLimit);
 ```
 
 Which would create an array like this...
 
-```[100, 98.33333333333333, 96.66666666666667, 95, 93.33333333333333, 91.66666666666667, 90, ...]```
+[100, 98.33333333333333, 96.66666666666667, 95, 93.33333333333333, 91.66666666666667, 90, ... , 0.5078125, 0.4947916666666667]
 
