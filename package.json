@@ -16,5 +16,5 @@
   ],
   "author": "Neil Ludlow",
   "license": "ISC",
-  "description": ""
+  "description": "Creates an array of the halflife of something as the value decreases over time."
 }
