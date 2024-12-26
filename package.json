@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shortdark/halflife-array"
+    "url": "git+https://github.com/shortdark/halflife-array.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
