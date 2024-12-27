@@ -16,11 +16,15 @@ Creates an array of the halflife of something as it decreases over time.
 * **amountLimit**: The value to stop calculating the value at
 
 ```
+const halflifeArray = require('halflife-array');
+
 const readingAmount = 100;
 const halflifeMinutes = 300;
 const intervalMinutes = 10; 
 const amountLimit = 0.5;
-const halflifeArray = halflifeArray(readingAmount, halflifeMinutes, intervalMinutes, amountLimit);
+const array = halflifeArray(readingAmount, halflifeMinutes, intervalMinutes, amountLimit);
+
+console.log(array);
 ```
 
 Which would create an array like this...
