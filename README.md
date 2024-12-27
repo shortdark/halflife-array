@@ -5,6 +5,7 @@ Creates an array of the halflife of something as it decreases over time.
 ## Installation
 
 ```npm i halflife-array```
+
 ```yarn add halflife-array```
 
 ## Usage
