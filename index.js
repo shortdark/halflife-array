@@ -7,7 +7,6 @@ function halflifeArray(readingAmount = 100, halflifeMinutes = 300, intervalMinut
       currentAmount = halflifeReduction(i, readingAmount, readingArray, halflifeMinutes, intervalMinutes);
     }
     readingArray[i] = currentAmount;
-    // console.log(i , ': ', currentAmount);
     i++;
   }
   return readingArray;
