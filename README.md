@@ -8,16 +8,28 @@ Creates an array of the halflife of something as it decreases over time.
 
 ```yarn add halflife-array```
 
-## Usage
 
-* **readingAmount**: The initial value
-* **halflifeMinutes**: The halflife in minutes, default: 300 (5 hours)
-* **intervalMinutes**: The interval to represent in the array, i.e. each array value is 10 minutes after the one before
-* **amountLimit**: The value to stop calculating the value at
+## CommonJS Import
 
 ```
 const halflifeArray = require('halflife-array');
+```
 
+## ESM Import
+
+```
+import halflifeArray from 'halflife-array'
+```
+
+
+## Usage
+
+* **readingAmount**: The initial value, default: 100
+* **halflifeMinutes**: The halflife in minutes, default: 300 (5 hours)
+* **intervalMinutes**: The interval in minutes between each array value, default: 10, i.e. each array value is 10 minutes after the one before
+* **amountLimit**: The lower bound - calculation stops when the value drops below this, default: 0.5
+
+```
 const readingAmount = 100;
 const halflifeMinutes = 300;
 const intervalMinutes = 10; 
