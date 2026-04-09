@@ -19,7 +19,8 @@
     "url": "git+https://github.com/shortdark/halflife-array.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "halflife",
@@ -28,5 +29,8 @@
   ],
   "author": "Neil Ludlow",
   "license": "ISC",
-  "description": "Creates an array of the halflife of something as the value decreases over time."
+  "description": "Creates an array of the halflife of something as the value decreases over time.",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }
